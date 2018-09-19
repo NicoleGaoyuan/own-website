@@ -1,0 +1,12 @@
+.main_right ,.main_left ,.main{
+    width: 100%;
+}
+.tab ul li {
+    width: 24%;
+}
+.nav,.banner,.green,.timer,.main_right{
+    display: none;
+}
+.span{
+    display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>后台系统</title>
+    <link rel="shortcut icon" type="img/x-icon" href="img/icon.1.ico" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+    <div ng-app="app" id="login">
+        <div class="box">
+            <div class="login_pic">
+                <img src="img/weixintupian_20171019105343.jpg" alt="">
+            </div>
+            <div class="login-container">
+                <h2>请您登录</h2>
+                <form action="" name="login">
+                    <div class="from_box">
+                        <label for="user_name">用户名：</label>
+                        <input id="user_name" name="username" type="text" placeholder="请输入用户名">
+                    </div>
+                    <div class="from_box">
+                        <label for="pass_word">密 码：</label>
+                        <input id="pass_word" name="password" type="text" placeholder="请输入密码">
+                    </div>
+                    <div class="from_box error">
+                        <span class="hideer">请输入用户名</span>
+                        <span class="hideer">请输入密码</span>
+                    </div>
+                    <div class="from_box btn-container">
+                        <input type="button" class="btn btn-success" value="提交">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
