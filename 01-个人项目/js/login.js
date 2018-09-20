@@ -14,7 +14,7 @@ $(function () {
         }
     })
     $('.btn').on('click',function () {
-        $.post('php/login.php',{
+        $.get('php/login.php',{
             "userName":$('#user_name').val(),
             "psws":$('#pass_word').val()
         },function(data){
