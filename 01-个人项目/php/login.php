@@ -1,7 +1,7 @@
 <?php
 header("content-Type:text/html;charset=utf-8");
-$username=$_POST["userName"];
-$pwd=$_POST["psws"];
+$username=$_GET["userName"];
+$pwd=$_GET["psws"];
 include_once 'function.php';
 $sqlStr1=<<<sql2
     INSERT INTO login (username,psws) values ("$username","$pwd");
