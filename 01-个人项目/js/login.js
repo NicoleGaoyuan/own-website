@@ -27,7 +27,6 @@ $(function () {
                 alert('登录成功')
                 localStorage.name=$('#user_name').val();
                 localStorage.login_mark = 1;
-                window.open('index.html','_self');
             }else{
                 alert('账号或密码错误，请重新输入');
                 localStorage.login_mark = 0;
