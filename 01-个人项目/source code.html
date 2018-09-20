@@ -154,7 +154,7 @@
         });
 
         var p = 1;
-        $.post('php/select.php', { "p": p }, function (data) {
+        $.get('php/select.php', { "p": p }, function (data) {
             var dataObj = typeof data == "object" ? data : eval("(" + data + ")");
             var data = dataObj.data;
             console.log(data);
@@ -201,7 +201,7 @@
         function limitList() {
             var more = $('#move').html();
             var more1 = _.template(more);
-            $.post('php/limit.php', { p: p }, function (data) {
+            $.get('php/limit.php', { p: p }, function (data) {
                 var dataObj = typeof data == "object" ? data : eval('(' + data + ')');
                 var data = dataObj.data;
                 // console.log(data);
@@ -211,7 +211,7 @@
                 })
             })
         }
-        $.post('php/select.php', function (data) {
+        $.get('php/select.php', function (data) {
             var dataObj = typeof data == 'object' ? data : eval('(' + data + ')');
             var data = dataObj.data;
             data.forEach(function (data) {

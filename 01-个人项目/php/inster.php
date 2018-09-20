@@ -1,9 +1,9 @@
 <?php
 header("content-Type:text/html;charset=utf-8");//HTML页面的编码格式
 
-$stuID = $_POST['stuID'];
-$img = $_POST['img'];
-$title = $_POST['title'];
+$stuID = $_GET['stuID'];
+$img = $_GET['img'];
+$title = $_GET['title'];
 
 include_once "function.php";
 

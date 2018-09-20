@@ -1,5 +1,5 @@
 <?php
-$id=$_POST['p'];
+$id=$_GET['p'];
 $con=mysqli_connect('localhost','root','');
 mysqli_select_db($con,'cangku');
 mysqli_query($con,'set names utf8');

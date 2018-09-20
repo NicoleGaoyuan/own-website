@@ -26,7 +26,7 @@
                 <h2>来留个言
                     <span>抢沙发</span>
                 </h2>
-                <form class="form" method="post">
+                <form class="form" method="get">
                     <p>
                         昵称：
                         <input type="text" name="" id="name">
@@ -95,7 +95,7 @@
                     }  else if ($('#youX').val() == '') {
                         alert('内容不能为空')
                     } else {
-                        $.post('php/add.php', object, function (back) {
+                        $.get('php/add.php', object, function (back) {
                             console.log(back)
                             if (back == '插入成功') {
                                 // alert("添加成功");
@@ -111,7 +111,7 @@
 
             render: function () {
                 $('.mess_main ul').empty();
-                $.post('php/mess_select.php', function (back) {
+                $.get('php/mess_select.php', function (back) {
                     var dataObj = typeof back == 'object' ? back : eval('(' + back + ')');
                     var dataArr = dataObj.data;
                     console.log(dataArr);
